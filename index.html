@@ -5,6 +5,8 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="Styles/Testimonial-Carousel.css">
      <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="Styles/product-card.css">
+     <link rel="stylesheet" href="Styles/carousel.css">
 
 
 
@@ -14,7 +16,7 @@
 </head>
 <body>
      <!-----------------------NAV BAR Start-------------------------  -->
-     <header class="header sticky top-0 bg-white shadow-md flex items-center justify-between px-8 py-02">
+     <header class="header  top-0 bg-white shadow-md flex items-center justify-between px-8 py-02 ">
           <!-- logo -->
           <h1 class="w-32">
               <img src="image/nike-logo.png" alt="">
@@ -23,11 +25,16 @@
           <!-- navigation -->
           <nav class="nav font-semibold ">
               <ul class="flex items-center">
+
+               <li class="p-4 border-b-2 border-black border-opacity-0 hover:border-opacity-100 hover:text-black duration-200 cursor-pointer active ">
+                    <a href="index.html">HOME</a>
+                  </li>
+               
                   <li class="p-4 border-b-2 border-black border-opacity-0 hover:border-opacity-100 hover:text-black duration-200 cursor-pointer active">
                     <a href="">MEN</a>
                   </li>
                   <li class="p-4 border-b-2 border-black border-opacity-0 hover:border-opacity-100 hover:text-black duration-200 cursor-pointer">
-                    <a href="">WOMEN</a>
+                    <a href="women.html">WOMEN</a>
                   </li>
                   <li class="p-4 border-b-2 border-black border-opacity-0 hover:border-opacity-100 hover:text-black duration-200 cursor-pointer">
                     <a href="">KIDS</a>
@@ -48,75 +55,69 @@
               </a>
           </div>
       </header>
-<!-----------------------NAV BAR Start-------------------------  -->
+<!-----------------------NAV BAR end-------------------------  -->
      
   <!--------------- Flexbox Testimonial Carousel start   ----------------->
-     <div class="col-sm-7 mx-auto ">
-          <header class="section-header text-center">
-            <span class="h1 d-block">
-              <span></span>
-            </span>
-            <h2></h2>
-          </header>
-        </div>
-        
-        <div id="flex-container" class="testimonials">
-          <div id="left-zone">
-            <ul class="list">
-              <li class="item">
-                <input type="radio" id="radio_testimonial-1" name="basic_carousel" checked="checked" />
-                <label class="label_testimonial-1 " for="radio_testimonial-1">Nike Air Max SC</label>
-                <div class="content-test content_testimonial-1">
-                  <span class="picto"></span>
-                  <h1 class="font-bold">Nike Air Max SC</h1>
-                  <p class="font-semibold">Women's Shoes</p>
-                  <p class="font-semibold" class="testimonialFrom ">$52.97</p>
-                  <p class="text-lime-500" class="testimonialState "> 37% off</p>
-                </div>
-              </li>
-              <li class="item">
-                <input type="radio" id="radio_testimonial-2" name="basic_carousel" />
-                <label class="label_testimonial-2" for="radio_testimonial-2">Nike Air Force 1 Shadow</label>
-                <div class="content-test content_testimonial-2">
-                  <span class="picto"></span>
-                  <h1 class="font-bold">Nike Air Force 1 Shadow</h1>
-                  <p class="font-semibold">Women's Shoes</p>
-                  <p class="font-semibold" class="testimonialFrom ">$130</p>
-                  <p class="text-lime-500" class="testimonialState "> </p>
-                  <br>
-                </div>
-              </li>
-              <li class="item">
-                <input type="radio" id="radio_testimonial-3" name="basic_carousel" />
-                <label class="label_testimonial-3 " for="radio_testimonial-3">Nike Air Force 1 '07 LX</label>
-                <div class="content-test content_testimonial-3">
-                  <span class="picto"></span>
-                  <h1 class="font-bold">Nike Air Force 1 '07 LX</h1>
-                  <p class="font-semibold">Women's Shoes</p>
-                  <p class="font-semibold" class="testimonialFrom ">$130</p>
-                  <p class="text-lime-500" class="testimonialState "></p>
-                </div>
-              </li>
-              <li class="item">
-                <input type="radio" id="radio_testimonial-4" name="basic_carousel" />
-                <label  class="label_testimonial-4  " for="radio_testimonial-4">Nike Air Force 1 '07 SE</label>
-                <div class="content-test content_testimonial-4">
-                  <span class="picto"></span>
-                  <h1 class="font-bold">Nike Air Force 1 '07 SE</h1>
-                  <p class="font-semibold">Women's Shoes</p>
-                  <p class="font-semibold" class="testimonialFrom ">$76.97</p>
-                  <p class="text-lime-500" class="testimonialState ">35% off</p>
-                  <br>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div id="right-zone"></div>
-     </div> 
+  
+  <div id="flex-container" class="testimonials" class="">
+     <div id="left-zone">
+       <ul class="list">
+         <li class="item">
+           <input type="radio" id="radio_testimonial-1" name="basic_carousel" checked="checked" />
+           <label class="label_testimonial-1 " for="radio_testimonial-1">Nike Air Max SC</label>
+           <div class="content-test content_testimonial-1">
+             <span class="picto"></span>
+             <h1 class="font-bold">Nike Air Max SC</h1>
+             <p class="font-semibold">Women's Shoes</p>
+             <p class="font-semibold" class="testimonialFrom ">$52.97</p>
+             <p class="text-lime-500" class="testimonialState "> 37% off</p>
+           </div>
+         </li>
+         <li class="item">
+           <input type="radio" id="radio_testimonial-2" name="basic_carousel" />
+           <label class="label_testimonial-2" for="radio_testimonial-2">Nike Air Force 1 Shadow</label>
+           <div class="content-test content_testimonial-2">
+             <span class="picto"></span>
+             <h1 class="font-bold">Nike Air Force 1 Shadow</h1>
+             <p class="font-semibold">Women's Shoes</p>
+             <p class="font-semibold" class="testimonialFrom ">$130</p>
+             <p class="text-lime-500" class="testimonialState "> </p>
+             <br>
+           </div>
+         </li>
+         <li class="item">
+           <input type="radio" id="radio_testimonial-3" name="basic_carousel" />
+           <label class="label_testimonial-3 " for="radio_testimonial-3">Nike Air Force 1 '07 LX</label>
+           <div class="content-test content_testimonial-3">
+             <span class="picto"></span>
+             <h1 class="font-bold">Nike Air Force 1 '07 LX</h1>
+             <p class="font-semibold">Women's Shoes</p>
+             <p class="font-semibold" class="testimonialFrom ">$130</p>
+             <p class="text-lime-500" class="testimonialState "></p>
+           </div>
+         </li>
+         <li class="item">
+           <input type="radio" id="radio_testimonial-4" name="basic_carousel" />
+           <label  class="label_testimonial-4  " for="radio_testimonial-4">Nike Air Force 1 '07 SE</label>
+           <div class="content-test content_testimonial-4">
+             <span class="picto"></span>
+             <h1 class="font-bold">Nike Air Force 1 '07 SE</h1>
+             <p class="font-semibold">Women's Shoes</p>
+             <p class="font-semibold" class="testimonialFrom ">$76.97</p>
+             <p class="text-lime-500" class="testimonialState ">35% off</p>
+             <br>
+           </div>
+         </li>
+       </ul>
+     </div>
+     <div id="right-zone"></div>
+</div> 
 <!--------------- Flexbox Testimonial Carousel End   ----------------->     
-     
 
 
-<script src="javaScript/testimonialCarousel.js"></script>     
+<script src="javaScript/testimonialCarousel.js"></script> 
+<script src="javaScript/productCard.js">
+ 
+</script>    
 </body>
 </html>
